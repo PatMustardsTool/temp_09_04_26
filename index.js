@@ -3,4 +3,5 @@
 //
 // window.alert(`GAY`)
 
-//comment
+document.getElementById('my_header').textContent = `My Header`;
+document.getElementById('my_paragraph').textContent = `My GAY`;

@@ -1,7 +1,7 @@
-// console.log(`GAY!`);
-// console.log(`PIZZA`)
-//
-// window.alert(`GAY`)
+let my_name;
 
-document.getElementById('my_header').textContent = `My Header`;
-document.getElementById('my_paragraph').textContent = `My GAY`;
+document.getElementById('my_submit_button').onclick = function () {
+    my_name = document.getElementById('my_name').value;
+    console.log(my_name);
+    document.getElementById('my_header').value = `Hello, ${my_name}`;
+}

@@ -1,1 +1,6 @@
-console.log('Happy developing ✨')
+// console.log(`GAY!`);
+// console.log(`PIZZA`)
+//
+// window.alert(`GAY`)
+
+//comment

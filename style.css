@@ -1,6 +1,6 @@
 body{
     display: block;
-    font-family: Verdana, sans-serif;
+    font-family: Aptos, sans-serif;
     font-size: 2em;
     text-align: center;
 }
@@ -23,9 +23,9 @@ button:hover {
 }
 
 #my_result {
-    color: #0077cc;
+    color: darkred;
     font-family: Times New Roman, sans-serif;
     font-size: 1em;
     font-weight: bold;
-    margin-top: 300px;
+    margin-top: 10px;
 }

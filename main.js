@@ -1,3 +1,5 @@
+import {function_conditional_text} from './functions.js';
+
 const MY_PI = Math.PI;
 const my_text_input = document.getElementById('my_text_input');
 const my_number_input = document.getElementById('my_number_input');
@@ -19,21 +21,9 @@ my_submit_button.onclick = function ()
     const my_number = my_number_input.value;
     const my_checkbox_status = my_checkbox_input.checked;
     const my_radio_value = Array.from(my_radio_group).find(my_radio => my_radio.checked)?.value;
-    console.log(my_radio_value)
     my_answer = Math.round((my_number*MY_PI+my_answer)*100)/100;
 
-    let my_conditional_text;
-    if (my_answer < 10)
-    {
-        my_conditional_text = 'Weak';
-    }
-    else if (my_answer < 100)
-    {
-        my_conditional_text = 'Strong';
-    }
-    else {
-        my_conditional_text = 'Grand';
-    }
+    const my_conditional_text = function_conditional_text(my_answer)
 
     const my_html = `
         <table>

@@ -10,10 +10,11 @@ body {
 
 form {
     background: linear-gradient(15deg, whitesmoke, rosybrown);
-    border-radius: 10px;
-    box-shadow: 5px 10px 20px grey;
+    border-radius: 0.6rem;
+    box-shadow: 0.3rem 0.6rem 1.25rem grey;
     margin: auto;
     max-width: 35%;
+    padding: 0.6rem;
     text-align: center
 }
 
@@ -25,10 +26,10 @@ label, input {
 input[type='number'], input[type='text'] {
     background: whitesmoke;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     color: saddlebrown;
-    height: 25px;
-    width: 20%;
+    height: 1.5rem;
+    width: 10rem;
 }
 
 input:hover {
@@ -39,8 +40,8 @@ input:hover {
 input[type='checkbox'], input[type='radio'] {
     accent-color: darkgoldenrod;
     cursor: pointer;
-    height: 18px;
-    width: 18px;
+    height: 1.25rem; /* 18px */
+    width: 1.25rem;
 }
 
 input[type='checkbox']:hover, input[type='radio']:hover {
@@ -50,13 +51,13 @@ input[type='checkbox']:hover, input[type='radio']:hover {
 button {
     background-color: saddlebrown;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: whitesmoke;
     cursor: pointer;
     font-size: .75em;
     font-weight: bold;
-    margin-top: 25px;
-    padding: 5px 5px;
+    margin-top: 1.5rem;
+    padding: 0.3rem;
     transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -65,7 +66,7 @@ button:hover {
 }
 
 .row {
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 #my_result_table {
@@ -75,11 +76,11 @@ button:hover {
     font-size: .75em;
     font-style: italic;
     font-weight: bold;
-    margin: 25px auto 0 auto;
+    margin: 1.5em auto 0 auto;
 }
 
 #my_result_table td {
     border: 1px solid darkred;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     text-align: left;
 }

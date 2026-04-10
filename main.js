@@ -15,7 +15,7 @@ const my_result_table = document.getElementById('my_result_table');
 
 let my_answer = 0;
 
-my_submit_button.onclick = function ()
+function main_submit ()
 {
     const my_name = my_text_input.value;
     const my_number = my_number_input.value;
@@ -37,7 +37,7 @@ my_submit_button.onclick = function ()
     my_result_table.innerHTML = my_html;
 }
 
-my_reset_button.onclick = function ()
+function main_reset()
 {
     my_text_input.value = '';
     my_number_input.value = '';

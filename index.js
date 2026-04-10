@@ -4,10 +4,7 @@ const MY_PI = Math.PI;
 const my_text_input = document.getElementById('my_text_input');
 const my_number_input = document.getElementById('my_number_input');
 const my_checkbox_input = document.getElementById('my_checkbox_input');
-const my_radio_group = document.getElementsByName('radio_grouping');
-
-// const my_radio_group = document.querySelectorAll('input[name="radio_grouping"]');
-
+const my_radio_group = document.getElementsByName('radio_group');
 
 const my_submit_button = document.getElementById('my_submit_button');
 const my_reset_button = document.getElementById('my_reset_button');
@@ -15,7 +12,7 @@ const my_result_table = document.getElementById('my_result_table');
 
 let my_answer = 0;
 
-my_submit_button.onclick = function ()
+function ()
 {
     const my_name = my_text_input.value;
     const my_number = my_number_input.value;
@@ -32,7 +29,7 @@ my_submit_button.onclick = function ()
           <tr><td>Checkbox</td><td>${my_checkbox_status}</td></tr>
           <tr><td>Radio</td><td>${my_radio_value}</td></tr>
         </table>
-        `;
+    `;
 
     my_result_table.innerHTML = my_html;
 }

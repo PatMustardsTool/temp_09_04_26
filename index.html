@@ -10,7 +10,10 @@
 <body>
     <form>
         <div class='row'>
-            <h2 id='my_header'>Welcome</h2>
+            <div id='header_row'>
+                <h2 id='my_header'>Welcome</h2>
+                <img id='my_reset_icon' class='icon' src='svg/reload-svgrepo-com.svg' alt='reset'>
+            </div>
         </div>
         <div class='row'>
             <label for='my_text_input'>Text: </label><input type='text' id='my_text_input'>
@@ -25,8 +28,7 @@
             <label for='my_radio_3_input'> Radio 3: </label><input type='radio' id='my_radio_3_input' value='Radio 3' name='radio_group'>
         </div>
         <div class='row'>
-            <button id='my_submit_button' type='button' >Submit</button>
-            <button id='my_reset_button' type='button'>Reset</button>
+            <button id='my_submit_button' type='button'>Submit</button>
         </div>
         <div class='row'>
             <table id='my_result_table'></table>

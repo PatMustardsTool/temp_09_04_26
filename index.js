@@ -7,7 +7,7 @@ const my_checkbox_input = document.getElementById('my_checkbox_input');
 const my_radio_group = document.getElementsByName('radio_group');
 
 const my_submit_button = document.getElementById('my_submit_button');
-const my_reset_button = document.getElementById('my_reset_button');
+const my_reset_icon = document.getElementById('my_reset_icon');
 const my_result_table = document.getElementById('my_result_table');
 
 let my_answer = 0;
@@ -43,4 +43,4 @@ function index_reset()
 }
 
 my_submit_button.addEventListener('click', index_submit);
-my_reset_button.addEventListener('click', index_reset);
+my_reset_icon.addEventListener('click', index_reset);

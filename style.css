@@ -22,7 +22,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-#my_result {
+#my_result_div {
     color: darkred;
     font-family: Times New Roman, sans-serif;
     font-size: 1em;

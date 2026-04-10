@@ -27,9 +27,6 @@ function index_submit()
           <tr><td>Number</td><td>${my_answer} (${my_conditional_text})</td></tr>
           <tr><td>Checkbox</td><td>${my_checkbox_status}</td></tr>
           <tr><td>Radio</td><td>${my_radio_value}</td></tr>
-          <tr><td>Radio</td><td>${my_radio_value}</td></tr>
-          <tr><td>Radio</td><td>${my_radio_value}</td></tr>
-          <tr><td>Radio</td><td>${my_radio_value}</td></tr>
     `;
 
     my_result_table.innerHTML = my_html;

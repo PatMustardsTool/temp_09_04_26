@@ -1,18 +1,18 @@
-body{
+body {
     background: whitesmoke;
     display: block;
     font-family: Aptos, sans-serif;
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: center;
 }
 
-input {
-    margin-top: 25px;
+label, input {
+    vertical-align: middle;
 }
 
 input:hover {
     background: lightgoldenrodyellow;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 input[type='checkbox'], input[type='radio'] {

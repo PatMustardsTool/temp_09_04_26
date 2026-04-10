@@ -8,20 +8,28 @@
     <link rel='stylesheet' href='main.css'>
 </head>
 <body>
-    <h1 id='my_header'>Welcome</h1>
-    <label for='my_text_input'>Text: </label><input type='text' id='my_text_input'>
-    <label for='my_number_input'>&nbsp;Number: </label><input type='number' id='my_number_input'>
-    <br>
-    <label for='my_checkbox_input'>Checkbox: </label><input type='checkbox' id='my_checkbox_input'>
-    <br>
-    <label for='my_radio_1_input'>Radio 1: </label><input type='radio' id='my_radio_1_input' value='Radio 1' name='radio_grouping'>
-    <label for='my_radio_2_input'>   Radio 2: </label><input type='radio' id='my_radio_2_input' value='Radio 2' name='radio_grouping'>
-    <label for='my_radio_3_input'> Radio 3: </label><input type='radio' id='my_radio_3_input' value='Radio 3' name='radio_grouping'>
-    <br>
-    <button id='my_submit_button'>Submit</button>
-    <button id='my_reset_button'>Reset</button>
-    <br>
-    <table id='my_result_table'></table>
+    <div class='row'>
+        <h1 id='my_header'>Welcome</h1>
+    </div>
+    <div class='row'>
+        <label for='my_text_input'>Text: </label><input type='text' id='my_text_input'>
+        <label for='my_number_input'>&nbsp;Number: </label><input type='number' id='my_number_input'>
+    </div>
+    <div class='row'>
+        <label for='my_checkbox_input'>Checkbox: </label><input type='checkbox' id='my_checkbox_input'>
+    </div>
+    <div class='row'>
+        <label for='my_radio_1_input'>Radio 1: </label><input type='radio' id='my_radio_1_input' value='Radio 1' name='radio_grouping'>
+        <label for='my_radio_2_input'>   Radio 2: </label><input type='radio' id='my_radio_2_input' value='Radio 2' name='radio_grouping'>
+        <label for='my_radio_3_input'> Radio 3: </label><input type='radio' id='my_radio_3_input' value='Radio 3' name='radio_grouping'>
+    </div>
+    <div class='row'>
+        <button id='my_submit_button'>Submit</button>
+        <button id='my_reset_button'>Reset</button>
+    </div>
+    <div class='row'>
+        <table id='my_result_table'></table>
+    </div>
 
     <!-- Links JavaScript file for behavior -->
     <script type='module' src='main.js'></script>

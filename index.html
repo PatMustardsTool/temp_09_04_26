@@ -1,0 +1,41 @@
+<!--https://www.youtube.com/watch?v=Ihy0QziLDf0&list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv-->
+<!Doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>My_Website</title>
+    <!-- Links CSS file for styling -->
+    <link rel='stylesheet' href='index.css'>
+</head>
+<body>
+    <form>
+        <div class='row'>
+            <div id='header_row'>
+                <h2 id='my_header'>Welcome</h2>
+                <img id='my_reset_icon' class='icon' src='svg/reload-svgrepo-com.svg' alt='reset'>
+            </div>
+        </div>
+        <div class='row'>
+            <label for='my_text_input'>Text: </label><input type='text' id='my_text_input'>
+            <label for='my_number_input'>Number: </label><input type='number' id='my_number_input'>
+        </div>
+        <div class='row'>
+            <label for='my_checkbox_input'>Checkbox: </label><input type='checkbox' id='my_checkbox_input'>
+        </div>
+        <div class='row'>
+            <label for='my_radio_1_input'>Radio 1: </label><input type='radio' id='my_radio_1_input' value='Radio 1' name='radio_group'>
+            <label for='my_radio_2_input'>Radio 2: </label><input type='radio' id='my_radio_2_input' value='Radio 2' name='radio_group'>
+            <label for='my_radio_3_input'> Radio 3: </label><input type='radio' id='my_radio_3_input' value='Radio 3' name='radio_group'>
+        </div>
+        <div class='row'>
+            <button id='my_submit_button' type='button'>Submit</button>
+        </div>
+        <div class='row'>
+            <table id='my_result_table'></table>
+        </div>
+    </form>
+
+    <!-- Links JavaScript file for behavior -->
+    <script type='module' src='index.js'></script>
+</body>
+</html>

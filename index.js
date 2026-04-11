@@ -1,13 +1,13 @@
-import {function_conditional_text} from './functions.js';
+import {function_conditional_text} from './js_modules/functions.js';
+import {function_spin_icon} from './js_modules/animations.js';
 
 const MY_PI = Math.PI;
+const my_reset_icon = document.getElementById('my_reset_icon');
 const my_text_input = document.getElementById('my_text_input');
 const my_number_input = document.getElementById('my_number_input');
 const my_checkbox_input = document.getElementById('my_checkbox_input');
 const my_radio_group = document.getElementsByName('radio_group');
-
 const my_submit_button = document.getElementById('my_submit_button');
-const my_reset_icon = document.getElementById('my_reset_icon');
 const my_result_table = document.getElementById('my_result_table');
 
 let my_answer = 0;
@@ -34,6 +34,7 @@ function index_submit()
 
 function index_reset()
 {
+    function_spin_icon(my_reset_icon);
     my_text_input.value = '';
     my_number_input.value = '';
     my_checkbox_input.checked = false;

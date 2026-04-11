@@ -5,8 +5,8 @@
 :root {
     --my_primary_color: #B8860B;
     --my_secondary_color: #E0E0E0;
-    --my_light_black: #111111;
     --my_grey: #808080;
+    --my_light_black: #111111;
     --my_black: #000000;
 }
 
@@ -48,6 +48,7 @@ form {
 }
 
 #my_reset_icon {
+    stroke: var(--my_secondary_color);
     cursor: pointer;
     grid-column: 3;
     height: 2rem;
@@ -56,7 +57,7 @@ form {
     width: 2rem;
 }
 
-.spin {
+.animation_reset_spin {
     animation: spin 500ms linear;
     transform-box: fill-box;
     transform-origin: center;

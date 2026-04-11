@@ -1,5 +1,5 @@
-import {function_conditional_text} from './js_modules/functions.js';
-import {function_spin_icon} from './js_modules/animations.js';
+import {function_conditional_text} from './my_modules/functions.js';
+import {function_spin_icon} from './my_modules/animations.js';
 
 const MY_PI = Math.PI;
 const my_reset_icon = document.getElementById('my_reset_icon');

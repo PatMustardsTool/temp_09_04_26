@@ -5,7 +5,7 @@
 body {
     background: linear-gradient(15deg, #808080, #111111);
     color: #B8860B;
-    font-family: Aptos, sans-serif;
+    font-family: Open Sans, sans-serif;
     min-height: 100vh;
 }
 
@@ -48,6 +48,17 @@ form {
     width: 2rem;
 }
 
+.spin {
+    animation: spin 500ms linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .class_row {
     align-items: center;
     display: flex;
@@ -62,13 +73,11 @@ label, input {
     vertical-align: middle;
 }
 
-input {
-    transition: transform .2s;
-}
+label {color: #E0E0E0;}
 
-input:hover {
-    transform: scale(1.05);
-}
+input {transition: transform .2s;}
+
+input:hover {transform: scale(1.05);}
 
 input[type='number'], input[type='text'] {
     background: #E0E0E0;
@@ -101,13 +110,10 @@ button {
     transition: transform .2s;
 }
 
-button:hover {
-    transform: scale(1.05);
-}
+button:hover {transform: scale(1.05);}
 
 #my_result_table {
     border-collapse: collapse;
-    font-family: 'Times New Roman', serif;
     font-size: 1rem;
     margin: 1.5em auto 0 auto;
 }
@@ -116,15 +122,4 @@ button:hover {
     border: 1px solid;
     padding: .25rem .5rem;
     text-align: left;
-}
-
-.spin {
-    animation: spin 500ms linear;
-    transform-box: fill-box;
-    transform-origin: center;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }

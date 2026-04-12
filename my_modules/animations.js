@@ -1,4 +1,4 @@
-export function function_reset_animation(my_icon)
+export function function_animation_reset(my_icon)
 {
     const my_keyframes = [
         { transform: 'rotate(0deg)' },

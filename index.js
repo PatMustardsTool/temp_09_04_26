@@ -1,5 +1,5 @@
 import {function_conditional_text} from './my_modules/functions.js';
-import {function_reset_animation} from './my_modules/animations.js';
+import {function_animation_reset} from './my_modules/animations.js';
 
 const my_reset_icon = document.getElementById('my_reset_icon');
 const my_text_input = document.getElementById('my_text_input');
@@ -11,7 +11,7 @@ const my_result_table = document.getElementById('my_result_table');
 
 let my_answer = 0;
 
-function index_submit()
+function function_index_submit()
 {
     const MY_PI = Math.PI;
     const my_name = my_text_input.value;
@@ -32,10 +32,9 @@ function index_submit()
     my_result_table.innerHTML = my_html;
 }
 
-function index_reset()
+function function_index_reset()
 {
-    // const my_reset_animation_css = 'reset_keyframe 500ms ease-in-out';
-    function_reset_animation(my_reset_icon);
+    function_animation_reset(my_reset_icon);
     my_text_input.value = '';
     my_number_input.value = '';
     my_checkbox_input.checked = false;
@@ -44,5 +43,5 @@ function index_reset()
     my_result_table.innerHTML = '';
 }
 
-my_submit_button.addEventListener('click', index_submit);
-my_reset_icon.addEventListener('click', index_reset);
+my_submit_button.addEventListener('click', function_index_submit);
+my_reset_icon.addEventListener('click', function_index_reset);

@@ -23,10 +23,10 @@ function function_index_submit()
     const my_conditional_text = function_conditional_text(my_answer)
 
     const my_html = `
-          <tr><td>Text</td><td>${my_name}</td></tr>
-          <tr><td>Number</td><td>${my_answer} (${my_conditional_text})</td></tr>
-          <tr><td>Checkbox</td><td>${my_checkbox_status}</td></tr>
-          <tr><td>Radio</td><td>${my_radio_value}</td></tr>
+        <tr><td>Text</td><td>${my_name}</td></tr>
+        <tr><td>Number</td><td>${my_answer} (${my_conditional_text})</td></tr>
+        <tr><td>Checkbox</td><td>${my_checkbox_status}</td></tr>
+        <tr><td>Radio</td><td>${my_radio_value}</td></tr>
     `;
 
     my_result_table.innerHTML = my_html;

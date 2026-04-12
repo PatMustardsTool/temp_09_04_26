@@ -1,3 +1,4 @@
+div { outline: 1px solid red; }
 
 :root {
     --my_primary_color: #B8860B;
@@ -10,7 +11,7 @@
 
 body {
     background: linear-gradient(15deg, var(--my_grey), var(--my_light_black));
-    color: var(--my_primary_color);
+    color: var(--my_secondary_color);
     font-family: Open Sans, sans-serif;
     font-size: 1.25rem;
     min-height: 100vh;
@@ -22,9 +23,8 @@ form {
     border: 1px solid var(--my_black);
     border-radius: .75rem;
     box-shadow: .3rem .6rem 1.25rem var(--my_black);
-    height: min(300px, 80vh);
     margin: 5rem auto;
-    padding-bottom: 1rem;
+    padding-bottom: .25rem;
     text-align: center;
     width: min(700px, 90vw);
 }
@@ -47,7 +47,6 @@ form {
 }
 
 #my_header {
-    color: var(--my_secondary_color);
     font-size: 1.5rem;
     font-weight: bold;
     grid-column: 2;
@@ -75,10 +74,9 @@ form {
 
 label, input {
     font-weight: 500;
+    padding: 0.25rem .5rem;
     vertical-align: middle;
 }
-
-label {color: var(--my_secondary_color);}
 
 input {transition: transform .2s;}
 
@@ -119,6 +117,7 @@ button:hover {transform: scale(1.05);}
 
 #my_result_table {
     border-collapse: collapse;
+    color: var(--my_primary_color);
     margin: 1.25rem auto 0 auto;
 }
 
@@ -126,4 +125,13 @@ button:hover {transform: scale(1.05);}
     border: 1px solid;
     padding: .25rem .5rem;
     text-align: left;
+}
+
+.class_timestamp_row {
+    text-align: right;
+}
+
+#my_timestamp {
+    font-size: .75rem;
+    font-style: italic;
 }

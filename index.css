@@ -22,11 +22,11 @@ form {
     border: 1px solid var(--my_black);
     border-radius: .75rem;
     box-shadow: .3rem .6rem 1.25rem var(--my_black);
+    height: min(300px, 80vh);
     margin: 5rem auto;
     padding-bottom: 1rem;
     text-align: center;
     width: min(700px, 90vw);
-    height: min(300px, 80vh);
 }
 
 #my_header_row {

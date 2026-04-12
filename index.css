@@ -129,6 +129,7 @@ button:hover {transform: scale(1.05);}
 
 .class_timestamp_row {
     text-align: right;
+    margin-right: .5rem;
 }
 
 #my_timestamp {

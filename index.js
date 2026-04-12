@@ -1,5 +1,5 @@
-import {function_conditional_text} from './my_modules/functions.js';
-import {function_animation_reset} from './my_modules/animations.js';
+import {function_conditional_text} from './my_js_modules/functions.js';
+import {function_animation_reset} from './my_js_modules/animations.js';
 
 const my_reset_icon = document.getElementById('my_reset_icon');
 const my_text_input = document.getElementById('my_text_input');

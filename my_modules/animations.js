@@ -1,6 +1,14 @@
-export function function_reset_spin(my_icon)
+export function function_reset_animation(my_icon)
 {
-    my_icon.classList.remove('animation_reset_spin');
-    void my_icon.offsetWidth;
-    my_icon.classList.add('animation_reset_spin');
+    const my_keyframes = [
+        { transform: 'rotate(0deg)' },
+        { transform: 'rotate(360deg)' }
+    ];
+
+    const my_options = {
+        duration: 500,
+        easing: 'ease-in-out'
+    };
+
+    my_icon.animate(my_keyframes, my_options);
 }

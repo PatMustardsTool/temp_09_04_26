@@ -1,7 +1,6 @@
 import {function_conditional_text} from './my_modules/functions.js';
-import {function_reset_spin} from './my_modules/animations.js';
+import {function_reset_animation} from './my_modules/animations.js';
 
-const MY_PI = Math.PI;
 const my_reset_icon = document.getElementById('my_reset_icon');
 const my_text_input = document.getElementById('my_text_input');
 const my_number_input = document.getElementById('my_number_input');
@@ -14,6 +13,7 @@ let my_answer = 0;
 
 function index_submit()
 {
+    const MY_PI = Math.PI;
     const my_name = my_text_input.value;
     const my_number = my_number_input.value;
     const my_checkbox_status = my_checkbox_input.checked;
@@ -34,7 +34,8 @@ function index_submit()
 
 function index_reset()
 {
-    function_reset_spin(my_reset_icon);
+    // const my_reset_animation_css = 'reset_keyframe 500ms ease-in-out';
+    function_reset_animation(my_reset_icon);
     my_text_input.value = '';
     my_number_input.value = '';
     my_checkbox_input.checked = false;

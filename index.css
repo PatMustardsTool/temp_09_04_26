@@ -18,7 +18,6 @@ body {
 }
 
 form {
-    justify-content: center;
     background: url(my_images/background.svg) no-repeat center;
     background-size: cover;
     border: 1px solid var(--my_black);

@@ -1,4 +1,4 @@
-import {function_result_image} from './my_js_modules/functions.js';
+import {function_result_svg} from './my_js_modules/functions.js';
 import {function_animation_reset} from './my_js_modules/animations.js';
 
 const my_reset_icon = document.getElementById('my_reset_icon');
@@ -8,7 +8,7 @@ const my_checkbox_input = document.getElementById('my_checkbox_input');
 const my_radio_group = document.getElementsByName('radio_group');
 const my_submit_button = document.getElementById('my_submit_button');
 const my_result_table = document.getElementById('my_result_table');
-const my_result_img = document.getElementById('my_result_image');
+const my_result_svg = document.getElementById('my_result_svg');
 
 let my_answer = 0;
 let my_array = [1,2,3,8,5,6];
@@ -24,7 +24,7 @@ function function_index_submit()
     const my_radio_value = Array.from(my_radio_group).find(my_radio => my_radio.checked)?.value;
     my_answer = Math.round((my_number*MY_PI+my_answer)*100)/100;
 
-    function_result_image(my_answer, my_result_img);
+    function_result_svg(my_answer, my_result_svg);
 
     const my_html = `
         <tr><td>Text</td><td>${my_name}</td></tr>
@@ -44,7 +44,7 @@ function function_index_reset()
     my_checkbox_input.checked = false;
     Array.from(my_radio_group).forEach(my_radio => my_radio.checked = false);
     my_answer = 0;
-    function_result_image(my_answer, my_result_img);
+    function_result_svg(my_answer, my_result_svg);
     my_result_table.innerHTML = '';
 }
 

@@ -133,10 +133,11 @@ button:hover {transform: scale(1.05);}
     text-align: left;
 }
 
-#my_result_image {
+#my_result_svg {
     grid-column: 3;
+    fill: none;
     height: var(--my_header_height);
-    margin-left: 1rem;
+    justify-self: left;
 }
 
 .class_timestamp_row {

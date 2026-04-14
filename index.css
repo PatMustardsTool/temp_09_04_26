@@ -1,5 +1,9 @@
 /*div { outline: 1px solid red; }*/
 
+/*#my_result_div > * {*/
+/*    border: 1px dashed red;*/
+/*}*/
+
 :root {
     --my_primary_color: #B8860B;
     --my_secondary_color: #E0E0E0;
@@ -119,6 +123,7 @@ button:hover {transform: scale(1.05);}
     align-items: center;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    margin-top: 1rem;
 }
 
 #my_result_table {
@@ -134,10 +139,12 @@ button:hover {transform: scale(1.05);}
 }
 
 #my_result_svg {
-    grid-column: 3;
     fill: none;
+    grid-column: 3;
     height: var(--my_header_height);
     justify-self: left;
+    margin-left: 1rem;
+    width: var(--my_header_height);
 }
 
 .class_timestamp_row {

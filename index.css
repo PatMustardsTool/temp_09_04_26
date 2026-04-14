@@ -142,8 +142,7 @@ button:hover {transform: scale(1.05);}
     fill: none;
     grid-column: 3;
     height: var(--my_header_height);
-    justify-self: left;
-    margin-left: 1rem;
+    margin-left: 2rem;
     width: var(--my_header_height);
 }
 

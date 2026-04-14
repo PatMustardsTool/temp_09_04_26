@@ -1,4 +1,4 @@
-/*div { outline: 1px solid red; }*/
+div { outline: 1px solid red; }
 
 :root {
     --my_primary_color: #B8860B;
@@ -115,10 +115,16 @@ button {
 
 button:hover {transform: scale(1.05);}
 
+#my_result_div {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
 #my_result_table {
     border-collapse: collapse;
     color: var(--my_primary_color);
-    margin: 1.25rem auto 0 auto;
+    grid-column: 2;
 }
 
 #my_result_table td {
@@ -127,14 +133,20 @@ button:hover {transform: scale(1.05);}
     text-align: left;
 }
 
+#my_result_image {
+    grid-column: 3;
+    height: var(--my_header_height);
+    margin-left: 1rem;
+}
+
 .class_timestamp_row {
     text-align: right;
-    margin-right: .5rem;
 }
 
 #my_timestamp {
     font-size: .75rem;
     font-style: italic;
+    margin-right: .5rem;
 }
 
 @media (max-width: 600px) {

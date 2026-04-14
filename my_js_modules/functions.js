@@ -1,17 +1,17 @@
-export function function_conditional_text(my_answer)
+export function function_result_image(my_answer, my_result_image)
 {
-    let my_conditional_text;
-    if (my_answer < 10)
+    if (my_answer > 0 && my_answer < 10)
     {
-        my_conditional_text = 'Weak';
+        my_result_image.src = 'my_images/thumb.svg'
+        my_result_image.style.transform = 'rotate(-180deg)'
     }
-    else if (my_answer < 100)
+    else if (my_answer > 100)
     {
-        my_conditional_text = 'Strong';
+        my_result_image.src = 'my_images/thumb.svg'
+        my_result_image.style.transform = ''
     }
     else {
-        my_conditional_text = 'Grand';
+        my_result_image.src = ''
+        my_result_image.style.transform = ''
     }
-
-    return my_conditional_text;
 }

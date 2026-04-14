@@ -18,7 +18,7 @@
         </div>
         <div class='class_row'>
             <label for='my_text_input'>Text:</label><input type='text' id='my_text_input'>
-            <label for='my_number_input'>Number:</label><input type='number' id='my_number_input'>
+            <label for='my_number_input'>Number:</label><input type='number' id='my_number_input' min='1' max='10'>
         </div>
         <div class='class_row'>
             <label for='my_checkbox_input'>Checkbox:</label><input type='checkbox' id='my_checkbox_input'>
@@ -31,8 +31,9 @@
         <div class='class_row'>
             <button id='my_submit_button' type='button'>Submit</button>
         </div>
-        <div class='class_row'>
+        <div id='my_result_div'>
             <table id='my_result_table'></table>
+            <img id='my_result_image' src='' alt=''>
         </div>
         <div class='class_timestamp_row'>
             <span id='my_timestamp'>12/04/2026 19:56</span>

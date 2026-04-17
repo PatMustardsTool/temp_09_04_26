@@ -1,9 +1,5 @@
-import {function_generate_password, function_generate_html, function_result_svg} from './my_js_modules/functions.js';
+import {function_validate_form, function_generate_password, function_generate_html, function_result_svg} from './my_js_modules/functions.js';
 import {function_animation_reset} from './my_js_modules/animations.js';
-
-// let my_array = [1,2,3,8,5,6];
-// let my_max = Math.max(...my_array)
-// console.log(my_max);
 
 const my_form = document.getElementById('my_form');
 const my_reset_icon = document.getElementById('my_reset_icon');
@@ -17,14 +13,14 @@ const my_result_svg = document.getElementById('my_result_svg');
 let my_calculated_number = 0;
 function function_index_submit()
 {
-    const my_number = Number(my_number_input.value);
-
     const my_form_dict = {
         text: my_text_input.value,
-        number: my_number,
+        number: Number(my_number_input.value),
         checkbox_status: my_checkbox_input.checked,
         radio_value: Array.from(my_radio_group).find(my_radio_input => my_radio_input.checked)?.value
     };
+
+    if (!function_validate_form(my_form_dict)) {return;}
 
     [my_calculated_number, my_form_dict.password] = function_generate_password(my_form_dict , my_calculated_number);
     my_result_table.innerHTML = function_generate_html(my_form_dict, my_calculated_number);
@@ -37,16 +33,15 @@ function function_index_reset()
     my_calculated_number = 0;
     my_form.reset();
     function_result_svg(my_calculated_number, my_result_svg);
-    // my_text_input.value = '';
-    // my_number_input.value = '';
-    // my_checkbox_input.checked = false;
-    // Array.from(my_radio_group).forEach(my_radio => my_radio.checked = false);
-    // my_result_table.innerHTML = '';
 }
 
-my_form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    function_index_submit();
-});
+my_form.addEventListener
+('submit', (event) =>
+    {
+        event.preventDefault();
+        function_validate_form();
+        function_index_submit();
+    }
+);
 
 my_reset_icon.addEventListener('click', function_index_reset);

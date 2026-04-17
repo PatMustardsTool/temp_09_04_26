@@ -1,3 +1,8 @@
+export function function_validate_form(my_form_dict)
+{
+    return Number.isFinite(my_form_dict.number) && my_form_dict.number >= 1 && my_form_dict.number <= 10;
+}
+
 export function function_generate_password(my_form_dict, my_calculated_number)
 {
     const my_pi = Math.PI;

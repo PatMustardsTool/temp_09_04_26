@@ -78,7 +78,7 @@ form {
 
 label, input {
     font-weight: 500;
-    padding: 0.25rem .5rem;
+    padding: .25rem .5rem;
     vertical-align: middle;
 }
 
@@ -143,7 +143,7 @@ button:hover {transform: scale(1.05);}
 }
 
 #my_result_table td {
-    border: .05rem solid var(--my_primary_color);
+    border: .01rem solid var(--my_primary_color);
     padding: .25rem .5rem;
     text-align: left;
 }

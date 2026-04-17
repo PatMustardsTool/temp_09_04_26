@@ -1,7 +1,7 @@
-/*div { outline: .05rem solid red; }*/
+/*div { outline: .1rem solid red; }*/
 
 /*#my_result_div > * {*/
-/*    border: .05rem dashed red;*/
+/*    border: .1rem dashed red;*/
 /*}*/
 
 :root {
@@ -24,7 +24,7 @@ body {
 form {
     background: url(my_images/background.svg) no-repeat center;
     background-size: cover;
-    border: .05rem solid var(--my_black);
+    border: .1rem solid var(--my_black);
     border-radius: .75rem;
     box-shadow: .3rem .6rem 1.25rem var(--my_black);
     margin: 5rem auto;
@@ -143,7 +143,7 @@ button:hover {transform: scale(1.05);}
 }
 
 #my_result_table td {
-    border: .01rem solid var(--my_primary_color);
+    border: .1rem solid var(--my_primary_color);
     padding: .25rem .5rem;
     text-align: left;
 }

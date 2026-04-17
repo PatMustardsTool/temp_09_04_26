@@ -133,15 +133,14 @@ button:hover {transform: scale(1.05);}
     border-spacing: 0;
     color: var(--my_primary_color);
     grid-column: 2;
-    overflow: hidden;
-}
-
-#my_result_table tr:first-child td{
-    border-top: none;
 }
 
 #my_result_table tr:nth-child(even) {
     background: rgba(255, 255, 255, .25);
+}
+
+#my_result_table tr:first-child td{
+    border-top: none;
 }
 
 #my_result_table td {

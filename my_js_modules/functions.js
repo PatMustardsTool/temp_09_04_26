@@ -1,3 +1,10 @@
+export function function_generate_password()
+{
+
+}
+
+
+
 export function function_result_svg(my_answer, my_result_svg)
 {
     if (my_answer > 0 && my_answer < 10)

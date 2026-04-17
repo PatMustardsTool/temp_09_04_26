@@ -1,7 +1,7 @@
-/*div { outline: 1px solid red; }*/
+/*div { outline: .05rem solid red; }*/
 
 /*#my_result_div > * {*/
-/*    border: 1px dashed red;*/
+/*    border: .05rem dashed red;*/
 /*}*/
 
 :root {
@@ -24,7 +24,7 @@ body {
 form {
     background: url(my_images/background.svg) no-repeat center;
     background-size: cover;
-    border: 1px solid var(--my_black);
+    border: .05rem solid var(--my_black);
     border-radius: .75rem;
     box-shadow: .3rem .6rem 1.25rem var(--my_black);
     margin: 5rem auto;
@@ -36,7 +36,7 @@ form {
 #my_header_row {
     align-items: center;
     background: var(--my_primary_color);
-    border-radius: 0.6rem 0.6rem 0 0;
+    border-radius: .6rem .6rem 0 0;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     height: var(--my_header_height);
@@ -44,7 +44,7 @@ form {
 }
 
 #my_logo {
-    border-radius: 0.6rem 0 0 0;
+    border-radius: .6rem 0 0 0;
     grid-column: 1;
     height: 100%;
     width: 55%;
@@ -128,12 +128,22 @@ button:hover {transform: scale(1.05);}
 
 #my_result_table {
     border-collapse: collapse;
+    border-radius: 1.5rem;
     color: var(--my_primary_color);
     grid-column: 2;
 }
 
+#my_result_table tr:nth-child(even) {
+    background: rgba(255, 255, 255, .25);
+}
+
+#my_result_table td:first-child {
+    color: var(--my_secondary_color);
+    font-weight: 400;
+}
+
 #my_result_table td {
-    border: 1px solid;
+    border: .05rem solid var(--my_primary_color);
     padding: .25rem .5rem;
     text-align: left;
 }
@@ -175,8 +185,8 @@ button:hover {transform: scale(1.05);}
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
-        gap: 0.5rem;
-        padding: 0 0.5rem;
+        gap: .5rem;
+        padding: 0 .5rem;
     }
 
     label {

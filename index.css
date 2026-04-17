@@ -133,6 +133,7 @@ button:hover {transform: scale(1.05);}
     border-spacing: 0;
     color: var(--my_primary_color);
     grid-column: 2;
+    overflow: hidden;
 }
 
 #my_result_table tr:nth-child(even) {

@@ -5,12 +5,12 @@ import {function_animation_reset} from './my_js_modules/animations.js';
 // let my_max = Math.max(...my_array)
 // console.log(my_max);
 
+const my_form = document.getElementById('my_form');
 const my_reset_icon = document.getElementById('my_reset_icon');
 const my_text_input = document.getElementById('my_text_input');
 const my_number_input = document.getElementById('my_number_input');
 const my_checkbox_input = document.getElementById('my_checkbox_input');
 const my_radio_group = document.getElementsByName('radio_group');
-const my_submit_button = document.getElementById('my_submit_button');
 const my_result_table = document.getElementById('my_result_table');
 const my_result_svg = document.getElementById('my_result_svg');
 
@@ -29,21 +29,24 @@ function function_index_submit()
     [my_calculated_number, my_form_dict.password] = function_generate_password(my_form_dict , my_calculated_number);
     my_result_table.innerHTML = function_generate_html(my_form_dict, my_calculated_number);
     function_result_svg(my_calculated_number, my_result_svg);
-
-    console.log(my_calculated_number);
 }
 
 function function_index_reset()
 {
     function_animation_reset(my_reset_icon);
-    my_text_input.value = '';
-    my_number_input.value = '';
-    my_checkbox_input.checked = false;
-    Array.from(my_radio_group).forEach(my_radio => my_radio.checked = false);
     my_calculated_number = 0;
+    my_form.reset();
     function_result_svg(my_calculated_number, my_result_svg);
-    my_result_table.innerHTML = '';
+    // my_text_input.value = '';
+    // my_number_input.value = '';
+    // my_checkbox_input.checked = false;
+    // Array.from(my_radio_group).forEach(my_radio => my_radio.checked = false);
+    // my_result_table.innerHTML = '';
 }
 
-my_submit_button.addEventListener('click', function_index_submit);
+my_form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    function_index_submit();
+});
+
 my_reset_icon.addEventListener('click', function_index_reset);

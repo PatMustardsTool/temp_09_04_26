@@ -7,8 +7,8 @@ export function function_generate_password(my_form_dict, my_calculated_number)
     return [my_calculation, my_password];
 }
 
-export function function_generate_html(my_form_dict) {
-
+export function function_generate_html(my_form_dict)
+{
     return `
         <tr><td>Text</td><td>${my_form_dict.text}</td></tr>
         <tr><td>Number</td><td>${my_form_dict.number}</td></tr>

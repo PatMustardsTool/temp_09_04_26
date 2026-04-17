@@ -32,6 +32,7 @@ function function_index_reset()
     function_animation_reset(my_reset_icon);
     my_calculated_number = 0;
     my_form.reset();
+    my_result_table.innerHTML = ''
     function_result_svg(my_calculated_number, my_result_svg);
 }
 
@@ -39,7 +40,6 @@ my_form.addEventListener
 ('submit', (event) =>
     {
         event.preventDefault();
-        function_validate_form();
         function_index_submit();
     }
 );

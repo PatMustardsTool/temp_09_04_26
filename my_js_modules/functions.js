@@ -1,6 +1,15 @@
 export function function_validate_form(my_form_dict)
 {
-    return Number.isFinite(my_form_dict.number) && my_form_dict.number >= 1 && my_form_dict.number <= 10;
+    const my_number_error = document.getElementById('my_number_error');
+
+    if (!Number.isFinite(my_form_dict.number) || my_form_dict.number < 1 || my_form_dict.number > 10)
+    {
+        my_number_error.textContent = 'Number must be between 1 and 10';
+        return false;
+    }
+
+    my_number_error.textContent = '';
+    return true;
 }
 
 export function function_generate_password(my_form_dict, my_calculated_number)

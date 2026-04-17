@@ -76,6 +76,12 @@ form {
     margin-top: 1rem;
 }
 
+.class_error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
 label, input {
     font-weight: 500;
     padding: .25rem .5rem;

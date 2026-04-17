@@ -165,7 +165,7 @@ button:hover {transform: scale(1.05);}
     width: var(--my_header_height);
 }
 
-.class_timestamp_row {
+#my_timestamp_div {
     text-align: right;
 }
 
@@ -174,9 +174,6 @@ button:hover {transform: scale(1.05);}
     font-style: italic;
     margin-right: .5rem;
 }
-
-
-
 
 @media (max-width: 600px) {
 

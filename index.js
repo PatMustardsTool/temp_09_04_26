@@ -1,5 +1,9 @@
-import {function_result_svg} from './my_js_modules/functions.js';
+import {function_generate_password, function_generate_html, function_result_svg} from './my_js_modules/functions.js';
 import {function_animation_reset} from './my_js_modules/animations.js';
+
+// let my_array = [1,2,3,8,5,6];
+// let my_max = Math.max(...my_array)
+// console.log(my_max);
 
 const my_reset_icon = document.getElementById('my_reset_icon');
 const my_text_input = document.getElementById('my_text_input');
@@ -10,30 +14,23 @@ const my_submit_button = document.getElementById('my_submit_button');
 const my_result_table = document.getElementById('my_result_table');
 const my_result_svg = document.getElementById('my_result_svg');
 
-let my_answer = 0;
-let my_array = [1,2,3,8,5,6];
-let my_max = Math.max(...my_array)
-console.log(my_max);
-
+let my_calculated_number = 0;
 function function_index_submit()
 {
-    const MY_PI = Math.PI;
-    const my_name = my_text_input.value;
-    const my_number = my_number_input.value;
-    const my_checkbox_status = my_checkbox_input.checked;
-    const my_radio_value = Array.from(my_radio_group).find(my_radio => my_radio.checked)?.value;
-    my_answer = Math.round((my_number*MY_PI+my_answer)*100)/100;
+    const my_number = Number(my_number_input.value);
 
-    function_result_svg(my_answer, my_result_svg);
+    const my_form_dict = {
+        text: my_text_input.value,
+        number: my_number,
+        checkbox_status: my_checkbox_input.checked,
+        radio_value: Array.from(my_radio_group).find(my_radio_input => my_radio_input.checked)?.value
+    };
 
-    const my_html = `
-        <tr><td>Text</td><td>${my_name}</td></tr>
-        <tr><td>Number</td><td>${my_answer}</td></tr>
-        <tr><td>Checkbox</td><td>${my_checkbox_status}</td></tr>
-        <tr><td>Radio</td><td>${my_radio_value}</td></tr>
-    `;
+    [my_calculated_number, my_form_dict.password] = function_generate_password(my_form_dict , my_calculated_number);
+    my_result_table.innerHTML = function_generate_html(my_form_dict, my_calculated_number);
+    function_result_svg(my_calculated_number, my_result_svg);
 
-    my_result_table.innerHTML = my_html;
+    console.log(my_calculated_number);
 }
 
 function function_index_reset()
@@ -43,8 +40,8 @@ function function_index_reset()
     my_number_input.value = '';
     my_checkbox_input.checked = false;
     Array.from(my_radio_group).forEach(my_radio => my_radio.checked = false);
-    my_answer = 0;
-    function_result_svg(my_answer, my_result_svg);
+    my_calculated_number = 0;
+    function_result_svg(my_calculated_number, my_result_svg);
     my_result_table.innerHTML = '';
 }
 
